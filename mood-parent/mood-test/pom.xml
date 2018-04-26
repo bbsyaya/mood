@@ -17,7 +17,6 @@
         <module>test-rest</module>
         <module>test-jello</module>
         <module>test-vue</module>
-        <module>test-kafka</module>
     </modules>
 
     <dependencies>

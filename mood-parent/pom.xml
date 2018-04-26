@@ -9,13 +9,10 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>mood-dubbo</module>
         <module>mood-common</module>
         <module>mood-api</module>
         <module>mood-core</module>
         <module>mood-test</module>
-        <module>mood-activemq</module>
-        <module>mood-kafka</module>
     </modules>
 
     <parent>
