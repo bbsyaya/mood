@@ -1,6 +1,5 @@
-package com.mood.module.api.user;
+package com.mood;
 
-import com.mood.base.BaseController;
 import com.mood.common.HttpCode;
 import com.mood.common.UserContants;
 import com.mood.entity.user.User;

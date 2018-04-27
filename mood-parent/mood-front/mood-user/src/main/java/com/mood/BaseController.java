@@ -1,12 +1,12 @@
-package com.mood.base;
+package com.mood;
 
 
+import com.mood.base.BaseVo;
 import com.mood.common.HttpCode;
 import com.mood.content.OauthContants;
 import com.mood.entity.user.User;
 import com.mood.redis.CacheService;
 import com.mood.utils.DateUtil;
-import lombok.val;
 import net.sf.json.JSONObject;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +17,10 @@ import org.springframework.ui.ModelMap;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.Serializable;
-import java.util.*;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 应用模块
@@ -56,11 +59,12 @@ public class BaseController {
 	}
 
 	protected ResponseEntity<?> buildResponseEntity(HttpCode errorEnum, BaseVo vo) {
-		if (vo == null) {
-			vo = new BaseVo();
-		}
-		vo.code = errorEnum.getCode();
-		vo.msg = errorEnum.getMsg();
+//		if (vo == null) {
+//			vo = new BaseVo();
+//		}
+		vo = new BaseVo(errorEnum);
+//		vo.code = errorEnum.getCode();
+//		vo.msg = errorEnum.getMsg();
 		return new ResponseEntity<BaseVo>(vo, HttpStatus.OK);
 	}
 

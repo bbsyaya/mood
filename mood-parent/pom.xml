@@ -12,7 +12,8 @@
         <module>mood-common</module>
         <module>mood-api</module>
         <module>mood-core</module>
-        <module>mood-test</module>
+        <module>mood-front</module>
+        <module>mood-admin</module>
     </modules>
 
     <parent>

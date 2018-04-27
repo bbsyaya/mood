@@ -1,6 +1,7 @@
 package com.mood.base;
 
 import com.mood.common.HttpCode;
+import lombok.Data;
 
 import java.io.Serializable;
 
@@ -9,6 +10,7 @@ import java.io.Serializable;
  * @author chaiwei
  * @time 2018-01-07 下午08:00
  */
+@Data
 public class BaseVo implements Serializable {
 
 	private static final long serialVersionUID = 1L;
@@ -24,21 +26,21 @@ public class BaseVo implements Serializable {
 		this.msg=errorEnum.getMsg();
 	}
 
-	public int getCode() {
-		return code;
-	}
-
-	public void setCode(int code) {
-		this.code = code;
-	}
-
-	public String getMsg() {
-		return msg;
-	}
-
-	public void setMsg(String msg) {
-		this.msg = msg;
-	}
+//	public int getCode() {
+//		return code;
+//	}
+//
+//	public void setCode(int code) {
+//		this.code = code;
+//	}
+//
+//	public String getMsg() {
+//		return msg;
+//	}
+//
+//	public void setMsg(String msg) {
+//		this.msg = msg;
+//	}
 
 	
 
