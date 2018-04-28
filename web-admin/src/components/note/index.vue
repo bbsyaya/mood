@@ -7,7 +7,7 @@
     </div>
     <div id="note-note">
       <div class="table">
-        <Table :columns="columns" :data="data"></Table>
+        <Table :columns="columns" ></Table>
       </div>
     </div>
   </div>

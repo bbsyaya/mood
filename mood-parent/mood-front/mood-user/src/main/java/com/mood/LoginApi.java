@@ -53,7 +53,7 @@ public class LoginApi extends BaseController {
         //验证用户是否存在
         User user = userService.selectByUsername(username);
         if(user == null){
-            cacheService.set(UserContants.LOGINNUMBER + username, loginNumber++, 15000);
+            cacheService.set(UserContants.LOGINNUMBER + username, (loginNumber++).toString(), 15000);
             return setModelMap(modelMap,HttpCode.LOGIN_NEVER_USER);
         }
         //判断用户是否停用

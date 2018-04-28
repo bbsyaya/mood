@@ -303,13 +303,15 @@ public class FtpUtils {
         return flag;
     }
 
-    public static void main(String[] args) {
-        FtpUtils ftp =new FtpUtils();
-        System.out.println("开始" + new Date());
-        ftp.uploadFile("E:\\alddim\\movie\\", "test.mp4", "D:\\test.mp4");
-//        ftp.downloadFile("ftpFile/data", "123.docx", "F://");
-//        ftp.deleeteFile("ftpFile/data", "123.docx");
-        System.out.println("结束" + new Date());
-        System.out.println("ok");
-    }
+//    public static void main(String[] args) {
+//        FtpUtils ftp =new FtpUtils();
+//        Date date = new Date();
+//        System.out.println("开始" + date);
+////        ftp.uploadFile("E:\\alddim\\movie\\", "test.mp4", "D:\\test.mp4");
+//        ftp.downloadFile("/", "test.skp", "E://");
+////        ftp.deleeteFile("ftpFile/data", "123.docx");
+//        System.out.println(((new Date()).getTime() - date.getTime()) / 1000.0);
+//        System.out.println("结束" + new Date());
+//        System.out.println("ok");
+//    }
 }

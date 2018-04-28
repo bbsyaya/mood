@@ -70,7 +70,7 @@
   #register-dev {
     float: right;
     width: 300px;
-    height: 600px;
+    /*height: 600px;*/
     margin-top: 300px;
     margin-right: 20%;
   }

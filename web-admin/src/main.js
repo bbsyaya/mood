@@ -29,6 +29,22 @@ const router = new VueRouter({
   routes: routers
 })
 
+router.beforeEach((to, from, next) => {
+  console.log('123')
+  if (to.matched.some(r => r.meta.requireAuth)) {
+    if (store.state.token) {
+      next()
+    } else {
+      next({
+        path: '/login',
+        query: {redirect: to.fullPath}
+      })
+    }
+  } else {
+    next()
+  }
+})
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

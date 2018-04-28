@@ -1,5 +1,5 @@
 <template>
-  <div id="login">
+  <div id="login" :style ="note">
     <div id="login-dev">
       <el-form :model="form" :rules="rules" ref="form" label-width="80px">
         <el-form-item label="用户名" prop="username">
@@ -29,6 +29,12 @@
   export default {
     data () {
       return {
+        note: {
+          backgroundImage: 'url(' + require('../../assets/images/login-dev.jpg') + ')',
+          backgroundRepeat: 'no-repeat'
+          // backgroundSize: "25px auto",
+          // marginTop: "5px",
+        },
         form: {
           username: '',
           password: ''
@@ -92,11 +98,16 @@
     border-radius: 4px;
     min-height: 36px;
   }
+  #login {
+    height: 100%;
+    /*background-color: #f2f2f2;*/
+    /*background-image: 'url("/src/assets/images/login-dev.jpg")'*/
+  }
   #login-dev {
     float: right;
     width: 300px;
-    height: 600px;
+    /*height: 600px;*/
     margin-top: 300px;
-    margin-right: 20%;
+    margin-right: 20%
   }
 </style>

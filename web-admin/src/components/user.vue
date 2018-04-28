@@ -1,18 +1,18 @@
 <template>
   <div id="user">
-    <el-container>
-      <el-header>
+    <!-- <el-container> -->
+      <!-- <el-header>
         <cw-header></cw-header>
-      </el-header>
-      <el-main>
+      </el-header> -->
+      <!-- <el-main> -->
         <div id="content">
           <router-view></router-view>
         </div>
-      </el-main>
-      <el-footer>
+      <!-- </el-main> -->
+      <!-- <el-footer>
         <cw-footer></cw-footer>
-      </el-footer>
-    </el-container>
+      </el-footer> -->
+    <!-- </el-container> -->
   </div>
 </template>
 
@@ -25,17 +25,16 @@ export default {
 <style>
 #user {
   width: 100%;
-  background-color: #64696f;
-}
-html,body {
-  margin: 0;
-  padding: 0;
   height: 100%;
-  overflow:auto
+  /*background-color: #64696f;*/
 }
-a {
-  text-decoration: none;
+
+#content {
+  width: 100%;
+  height: 100%;
+  /*background-color: #64696f;*/
 }
+
 .el-header, .el-footer {
     color: #333;
   }
